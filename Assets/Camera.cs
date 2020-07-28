@@ -16,7 +16,7 @@ public class Camera : MonoBehaviour
         Vector3 BellePos = Belle.transform.position;
 
         //カメラとプレイヤーの位置を同じにする
-        transform.position = new Vector3(BellePos.x, -5, -10);
+        transform.position = new Vector3(BellePos.x, -2, -10);
     }
 
 }
