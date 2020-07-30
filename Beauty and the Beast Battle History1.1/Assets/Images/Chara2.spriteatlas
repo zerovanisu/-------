@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Chara2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2fe221044fd534143bfb0f14cfd906d3, type: 3}
+    totalSpriteSurfaceArea: 12851200
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: e5292ed6b54245b4b86798c4a2e5660d, type: 3}
+  - {fileID: 21300000, guid: 122cda8807b2d1849af84383a3a13eea, type: 3}
+  - {fileID: 21300000, guid: c8c03eda0ea0da84cb8caf9f616cc337, type: 3}
+  - {fileID: 21300000, guid: fd9c9ddc37562d9418624a030b3dc6c9, type: 3}
+  - {fileID: 21300000, guid: 46af887fdd5d6fb4d95449a941a58e73, type: 3}
+  - {fileID: 21300000, guid: 46b1059f43baccc4fab93de7299e702f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - "\u30D9\u30EB_\u6012\u308A"
+  - "\u30D9\u30EB_\u60B2\u3057\u307F"
+  - "\u30D9\u30EB_\u30C7\u30D5\u30A9\u30EB\u30C8"
+  - "\u982D\u8EAB\u30D9\u30EB_\u900F\u904E"
+  - "\u30D9\u30EB_\u7B11\u9854"
+  - "\u30D9\u30EB_\u9A5A\u304D"
+  m_Tag: Chara2
+  m_IsVariant: 0
