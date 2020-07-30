@@ -1,2 +1,0 @@
-D:\Beauty and the Beast Battle History\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-D:\Beauty and the Beast Battle History\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
