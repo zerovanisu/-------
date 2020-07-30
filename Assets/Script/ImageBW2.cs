@@ -4,21 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 
 // 話しているキャラを明るくしてそれ以外を黒くするスクリプト
-public class ImageBW : MonoBehaviour
+public class ImageBW2 : MonoBehaviour
 {
     //ここでカラーを設定
     [SerializeField]
-    Color btnColor1 = Color.white;
+    Color btnColor1 = Color.red;
     [SerializeField]
-    Color btnColor2 = Color.black;
+    Color btnColor2 = Color.blue;
 
     // オブジェクトからイメージを読み取り
     [SerializeField]
     Image image;
     [SerializeField]
     Image image2;
+    public Image image3;
 
-   
     //ボタンをキャッシュする変数
     bool btnChangeFlag = true;
     Button btn;
@@ -26,13 +26,23 @@ public class ImageBW : MonoBehaviour
     {
         //何度もアクセスするのでこの変数にキャッシュ
         btn = gameObject.GetComponent<Button>();
+        
     }
 
     void Update()
     {
-        if (Input.GetMouseButton(0))　// コルーチンでマウスのボタンにより白、黒と色を変える
+        int a = 0;
+        if (Input.GetMouseButtonDown(0))　// コルーチンでマウスのボタンにより白、黒と色を変える
         {
-            StartCoroutine(WaitButtonClick());
+            for (int i = 0; i < a; i++)
+            {
+                StartCoroutine(WaitButtonClick());
+                ++a;
+            }
+        }
+        else
+        {
+            image3.color = new Color(1, 1, 1, 1);
         }
     }
     // 画像を白黒変える
