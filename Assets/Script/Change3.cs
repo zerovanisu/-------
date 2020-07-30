@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class Change3 : MonoBehaviour
 {
     [Header("フェード")] public FadeImage fade;
-    [SerializeField]
-    Text1 text1;
-    bool IsTextPush = false;
-
+    
     private bool firstPush = false;
     private bool goNextScene = false;
 
@@ -27,19 +24,10 @@ public class Change3 : MonoBehaviour
 
     private void Update()
     {
-        text1.TextUpdate(IsTextPush);
-        IsTextPush = false;
-
         if (!goNextScene && fade.IsFadeOutComplete())
         {
             SceneManager.LoadScene("Battle");
             goNextScene = true;
         }
-        
-    }
-
-    public void PushText()
-    {
-        this.IsTextPush = true;
     }
 }
