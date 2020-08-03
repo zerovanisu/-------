@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start area.unity
+    guid: c9c78306e346da5449e9e4f3d1571edb
+  - enabled: 1
+    path: Assets/Scenes/Enemy area(1).unity
+    guid: e441336b272afa948a2273a2769254e1
+  - enabled: 1
+    path: Assets/Scenes/Enemy area(2).unity
+    guid: 43eb979e16bbd63469c3c0ce690fc765
+  - enabled: 1
+    path: Assets/Scenes/Boss area.unity
+    guid: 2259f214128f96f4fabc6119a398ff28
+  m_configObjects: {}
