@@ -4,28 +4,35 @@ using UnityEngine;
 
 public class enemyT : MonoBehaviour
 {
-    public GameObject beast;//ターゲット(プレイヤー)
-    private float rad;//ラジアン変数
-    private Vector2 Position;//現在位置を代入する為の変数
+
+    GameObject beast;
+    private Rigidbody2D rb2d;
 
     // Start is called before the first frame update
     void Start()
     {
-        //atan2(目標方向のy座標 - 初期位置のy座標, 目標方向のx座標 - 初期位置のx座標)
-        rad = Mathf.Atan2(
-            beast.transform.position.ytransform.position.y,
-            beast.transform.position.x - transform.position.x);
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 現在位置をPositionに代入
-        Position = transform.position;
-        
-        Position.x += speed.x * Mathf.Cos(rad);// x += SPEED * cos(ラジアン)
-        Position.y += speed.y * Mathf.Sin(rad);// y += SPEED * sin(ラジアン)
-        transform.position = Position;// 現在の位置に加算減算を行ったPositionを代入する
+        EnemyMove();
     }
 
+    // ENEMYの移動関数1フレーム毎にUpdate関数から呼び出される
+    void EnemyMove()
+    {
+        // PLAYERの位置を取得
+        Vector2 targetPos = beast.transform.position;
+        // PLAYERのx座標
+        float x = targetPos.x;
+        // ENEMYは、地面を移動させるので座標は常に0とする
+        float y = 0;
+        // 移動を計算させるための２次元のベクトルを作る
+        Vector2 direction = new Vector2(
+          x - transform.position.x, y).normalized;
+        // ENEMYのRigidbody2Dに移動速度を指定する
+        rb2d.velocity = direction * 2;
+    }
 }
